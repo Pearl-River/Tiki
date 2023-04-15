@@ -1,12 +1,2347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/font/fontawesome-free-6.4.0-web/css/all.css">
     <title>Tiki - Mua hàng online</title>
 </head>
+
 <body>
-    <h1>HELLO</h1>
+    <header class="header grid">
+        <div class="header-top">
+            <div class="logo">
+                <a href="#">
+                    <img src="asset/img/logo.png" alt="LOGO" class="anh-logo">
+                </a>
+            </div>
+            <div class="tim-kiem">
+                <div class="tim-kiem-wrap">
+                    <i class="fa-solid fa-magnifying-glass kinh-lup"></i>
+                    <input type="text" class="nhap-du-lieu-tim-kiem" placeholder="Bạn tìm gì hôm nay">
+                    <button type="submit" class="nut-tim-kiem">Tìm kiếm</button>
+                </div>
+            </div>
+
+            <div class="cate-wrap">
+                <div class="trang-chu">
+                    <i class="fa-solid fa-house icon-home"></i>
+                    <a href="" class="chu-trang-chu">Trang chủ</a>
+                </div>
+                <div class="astra">
+                    <i class="fa-solid fa-crown icon-crown"></i>
+                    <a href="" class="chu-astra">Astra</a>
+                </div>
+                <div class="tai-khoan">
+                    <i class="fa-regular fa-face-smile-wink icon-face"></i>
+                    <a href="" class="chu-tai-khoan">Tài khoản</a>
+                </div>
+                <div class="gio-hang">
+                    <i class="fa-solid fa-cart-shopping icon-shop"></i>
+                    <div class="so-luong-gio-hang">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="danh-muc">
+                <ul class="nav-list">
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">trái cây</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">thịt, trứng</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">rau củ quả</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">sữa, bơ, phô mai</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">hải sản</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">gạo, mì ăn liền</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">đồ uống, bia rượu</a>
+                    </li>
+                    <li class="nav-cate">
+                        <a href="" class="nav-text">bánh kẹo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dia-chi">
+                <i class="fa-solid fa-location-dot icon-location address"></i>
+                <div class="chu-giao-den address">Giao đến: </div>
+                <div class="dia-chi-cu-the address">Q. Cầu Giấy, P. Mai Dịch, Hà Nội</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="crossbar">
+        <a href="" class="link-free-ship">
+            <img src="asset/img/free-ship.png" alt="FREESHIP" class="img-free-ship">
+            <div>
+                <strong>
+                    mọi đơn từ 149K.
+                </strong>
+                Áp dụng cho cả TikiNOW 2h
+            </div>
+            <i class="fa-solid fa-angle-right icon-right-crossbar"></i>
+        </a>
+    </div>
+
+    <main>
+        <div class="main">
+            <div class="grid noi-dung-chinh">
+                <div class="row">
+                    <div class="col-2 chieu-dai-danh-muc">
+                        <div class="category-wrap">
+                            <div class="noi-bat">
+                                <h4>Nổi bật</h4>
+                                <ul class="ds-muc-noi-bat">
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-1.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Giá Rẻ Mỗi Ngày</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-2.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Mua Nhiều Giảm Sâu</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-3.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Gia Dụng Giá Rẻ</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-4.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Xả kho</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-5.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Mã giảm giá</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-6.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Ưu đãi Affiliate</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-7.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Đóng tiền, nạp thẻ</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-8.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Mua trước trả sau</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-9.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Ưu đãi thẻ, ví</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-10.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Bảo hiểm Tiki360</a>
+                                    </li>
+
+                                    <li class="ds-noi-bat">
+                                        <img src="asset/img/noi-bat-11.webp" alt="" class="anh-noi-bat">
+                                        <a href="" class="noi-bat-link">Tiki Exchange</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="danh-muc-trai">
+                                <ul class="ds-muc-danh-muc">
+                                    <h4 class="chu-danh-muc">Danh mục</h4>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-1.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Đồ Chơi - Mẹ & Bé</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-2.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">NGON</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-3.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Điện Thoại - Máy Tính Bảng</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-4.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Làm Đẹp - Sức Khỏe</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-5.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Điện Gia Dụng</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-6.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Thời trang nữ</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-7.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Thời trang nam</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-8.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Giày - Dép nữ</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-9.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Túi thời trang nữ</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-10.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Giày - Dép nam</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-11.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Túi thời trang nam</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-12.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Balo và Vali</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-13.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Phụ kiện thời trang</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-14.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Đồng hồ và Trang sức</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-15.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Laptop - Máy Vi Tính - Linh kiện</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-16.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Nhà Cửa - Đời Sống</a>
+                                    </li>
+
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-17.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Cross Border - Hàng Quốc Tế</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-18.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Bách Hóa Online</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-19.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Thiết Bị Số - Phụ Kiện Số</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-20.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Voucher - Dịch vụ</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-21.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Ô Tô - Xe Máy - Xe Đạp</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-22.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Nhà Sách Tiki</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-23.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Điện Tử - Điện Lạnh</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-24.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Thể Thao - Dã Ngoại</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-25.png.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Máy Ảnh - Máy Quay Phim</a>
+                                    </li>
+                                    <li class="ds-danh-muc">
+                                        <img src="asset/img/danh-muc-26.jpg.webp" alt="" class="anh-danh-muc">
+                                        <a href="" class="danh-muc-link">Sản phẩm Tài chính - Bảo hiểm</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-10 tat-ca slide-show">
+                        <!-- <div class="slideshow-container">
+                            <div class="mySlides fade">
+                              <img src="asset/img/slide-1.webp" class="anh-slide">
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="asset/img/slide-2.webp" class="anh-slide">
+                            </div>
+                          
+                            <div class="mySlides fade">
+                              <img src="asset/img/slide-3.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-4.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-5.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-6.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-7.jpg.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-8.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-9.webp" class="anh-slide">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <img src="asset/img/slide-10.webp" class="anh-slide">
+                            </div>
+                          
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="dots-container">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(8)"></span>
+                                <span class="dot" onclick="currentSlide(9)"></span>
+                                <span class="dot" onclick="currentSlide(10)"></span>
+                            </div>
+
+                            <div class="col-2">
+                                <img src="asset/img/right-slide-show.jpg.webp" alt="" class="anh-ben-slide">
+                            </div>
+                        </div> -->
+                        <div class="anh-slide-test">
+                            <img src="asset/img/slide-1.webp" alt="">
+                        </div>
+
+                        <div class="san-pham">
+                            <div class="row bo-suu-tap">
+                                <h3>Bộ sưu tập nổi bật</h3>
+                                <div class="col-2 ds-bo-suu-tap">
+                                    <a href="">
+                                        <img src="asset/img/bst-1.png" alt="" class="anh-bo-su-tap">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-bo-suu-tap">
+                                    <a href="">
+                                        <img src="asset/img/bst-2.png" alt="" class="anh-bo-su-tap">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-bo-suu-tap">
+                                    <a href="">
+                                        <img src="asset/img/bst-3.png" alt="" class="anh-bo-su-tap">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-bo-suu-tap">
+                                    <a href="">
+                                        <img src="asset/img/bst-4.png" alt="" class="anh-bo-su-tap">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-bo-suu-tap">
+                                    <a href="">
+                                        <img src="asset/img/bst-5.png" alt="" class="anh-bo-su-tap">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-bo-suu-tap">
+                                    <a href="">
+                                        <img src="asset/img/bst-6.png" alt="" class="anh-bo-su-tap">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row thuong-hieu">
+                                <div class="tieu-de-thuong-hieu">
+                                    <h3>Thương Hiệu Chính Hãng
+                                        <img src="asset/img/official.png" alt="" class="anh-official">
+                                    </h3>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-1.png" alt="" class="anh-thuong-hieu">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-2.png" alt="" class="anh-thuong-hieu">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-3.png" alt="" class="anh-thuong-hieu">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-4.png" alt="" class="anh-thuong-hieu">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-5.png" alt="" class="anh-thuong-hieu">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-6.png" alt="" class="anh-thuong-hieu">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row thuong-hieu-gia-tot">
+                                <h3>Hàng Thương Hiệu Giá Tốt</h3>
+                                <div class="col-2 ds-thuong-hieu-gia-tot ds-thuong-hieu-gia-tot-dau">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-gia-tot-1.png" alt=""
+                                        class="anh-thuong-hieu-gia-tot">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu-gia-tot-ngang">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-gia-tot-2-1.png" alt=""
+                                        class="anh-thuong-hieu-gia-tot-ngang anh-thgtn-tren">
+                                        <img src="asset/img/thuong-hieu-gia-tot-2-2.png" alt=""
+                                            class="anh-thuong-hieu-gia-tot-ngang anh-thgtn-duoi">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu-gia-tot">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-gia-tot-3.png" alt=""
+                                        class="anh-thuong-hieu-gia-tot">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu-gia-tot-ngang">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-gia-tot-4-1.png" alt=""
+                                        class="anh-thuong-hieu-gia-tot-ngang anh-thgtn-tren">
+                                        <img src="asset/img/thuong-hieu-gia-tot-4-2.png" alt=""
+                                            class="anh-thuong-hieu-gia-tot-ngang anh-thgtn-duoi">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu-gia-tot">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-gia-tot-5.png" alt=""
+                                        class="anh-thuong-hieu-gia-tot">
+                                    </a>
+                                </div>
+                                <div class="col-2 ds-thuong-hieu-gia-tot-ngang">
+                                    <a href="">
+                                        <img src="asset/img/thuong-hieu-gia-tot-6-1.png" alt=""
+                                        class="anh-thuong-hieu-gia-tot-ngang anh-thgtn-tren">
+                                        <img src="asset/img/thuong-hieu-gia-tot-6-2.png" alt=""
+                                            class="anh-thuong-hieu-gia-tot-ngang anh-thgtn-duoi">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row danh-muc-noi-bat">
+                                <h3>Danh mục nổi bật</h3>
+                                <div class="col-2 ds-danh-muc-noi-bat">
+                                    <div class="bao-ngoai-danh-muc-noi-bat">
+                                        <div class="mau-nen-danh-muc-noi-bat">
+                                            <a href="">
+                                                <img src="asset/img/danh-muc-noi-bat-1.png.webp" alt=""
+                                                class="anh-danh-muc-noi-bat">
+                                            </a>
+                                        </div>
+                                        <a href="" class="chu-danh-muc-noi-bat">Sách tư duy - Kỹ năng sống</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ds-danh-muc-noi-bat">
+                                    <div class="bao-ngoai-danh-muc-noi-bat">
+                                        <div class="mau-nen-danh-muc-noi-bat">
+                                            <a href="">
+                                                <img src="asset/img/danh-muc-noi-bat-2.jpg.webp" alt=""
+                                                class="anh-danh-muc-noi-bat">
+                                            </a>
+                                        </div>
+                                        <a href="" class="chu-danh-muc-noi-bat">Điện thoại Smartphone</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ds-danh-muc-noi-bat">
+                                    <div class="bao-ngoai-danh-muc-noi-bat">
+                                        <div class="mau-nen-danh-muc-noi-bat">
+                                            <a href="">
+                                                <img src="asset/img/danh-muc-noi-bat-3.jpg.webp" alt=""
+                                                class="anh-danh-muc-noi-bat">
+                                            </a>
+                                        </div>
+                                        <a href="" class="chu-danh-muc-noi-bat">Tiểu Thuyết</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ds-danh-muc-noi-bat">
+                                    <div class="bao-ngoai-danh-muc-noi-bat">
+                                        <div class="mau-nen-danh-muc-noi-bat">
+                                            <a href="">
+                                                <img src="asset/img/danh-muc-noi-bat-4.jpg.webp" alt=""
+                                                class="anh-danh-muc-noi-bat">
+                                            </a>
+                                        </div>
+                                        <a href="" class="chu-danh-muc-noi-bat">Truyện ngắn - Tản văn</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ds-danh-muc-noi-bat">
+                                    <div class="bao-ngoai-danh-muc-noi-bat">
+                                        <div class="mau-nen-danh-muc-noi-bat">
+                                            <a href="">
+                                                <img src="asset/img/danh-muc-noi-bat-5.jpg.webp" alt=""
+                                                class="anh-danh-muc-noi-bat">
+                                            </a>
+                                        </div>
+                                        <a href="" class="chu-danh-muc-noi-bat">Sách Tôn Giáo - Tâm Linh</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ds-danh-muc-noi-bat">
+                                    <div class="bao-ngoai-danh-muc-noi-bat">
+                                        <div class="mau-nen-danh-muc-noi-bat">
+                                            <a href="">
+                                                <img src="asset/img/danh-muc-noi-bat-6.jpg.webp" alt=""
+                                                class="anh-danh-muc-noi-bat">
+                                            </a>
+                                        </div>
+                                        <a href="" class="chu-danh-muc-noi-bat">Tác phẩm kinh điển</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row goi-y-hom-nay">
+                                <h3>Gợi ý hôm nay</h3>
+                                <div class="col-2 ds-goi-y-hom-nay ds-goi-y-hom-nay-active">
+                                    <img src="asset/img/goi-y-hom-nay-1.png.webp" alt="" class="anh-goi-y-hom-nay">
+                                    <a href="" class="chu-goi-y-hom-nay chu-goi-y-hom-nay-active">Dành cho bạn</a>
+                                </div>
+                                <div class="col-2 ds-goi-y-hom-nay">
+                                    <img src="asset/img/goi-y-hom-nay-2.png.webp" alt="" class="anh-goi-y-hom-nay">
+                                    <a href="" class="chu-goi-y-hom-nay">Rẻ Mỗi Ngày</a>
+                                </div>
+                                <div class="col-2 ds-goi-y-hom-nay">
+                                    <img src="asset/img/goi-y-hom-nay-3.png.webp" alt="" class="anh-goi-y-hom-nay">
+                                    <a href="" class="chu-goi-y-hom-nay">Freeship</a>
+                                </div>
+                                <div class="col-2 ds-goi-y-hom-nay">
+                                    <img src="asset/img/goi-y-hom-nay-4.png.webp" alt="" class="anh-goi-y-hom-nay">
+                                    <a href="" class="chu-goi-y-hom-nay">Astra Plus</a>
+                                </div>
+                                <div class="col-2 ds-goi-y-hom-nay">
+                                    <img src="asset/img/goi-y-hom-nay-5.png.webp" alt="" class="anh-goi-y-hom-nay">
+                                    <a href="" class="chu-goi-y-hom-nay">Dịch vụ số</a>
+                                </div>
+                                <div class="col-2 ds-goi-y-hom-nay">
+                                    <img src="asset/img/goi-y-hom-nay-6.png.webp" alt="" class="anh-goi-y-hom-nay">
+                                    <a href="" class="chu-goi-y-hom-nay">Deal Siêu Hot</a>
+                                </div>
+                            </div>
+
+                            <div class="row tat-ca-san-pham">
+                                <div class="anh-quang-cao-danh-cho-ban">
+                                    <div class="col-2-6-anh anh-quang-cao">
+                                        <a href="">
+                                            <img src="asset/img/anh-to.png.webp" alt="" class="anh-danh-cho-ban">
+                                            <a href="" class="xem-ngay">Xem ngay <i
+                                                    class="fa-solid fa-angle-right xem-ngay-icon"></i></a>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-1.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">Không Diệt Không Sinh Đừng Sợ Hãi (TB5)</div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">-30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-2.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">Apple iPhone 14 Pro Max</div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">27.490.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-19%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 687 ASA (100k ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-3.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">Da Thịt Trong Cuộc Chơi</div>
+                                            <div class="danh-gia-san-pham">
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">139.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 3 ASA (506 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 2, ngày 17/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-4.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">Apple iPhone 13</div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">16.990.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-32%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 425 ASA (62k ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-5.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                [Lắp đặt tại nhà] Ghế Massage Toàn Thân con lăn
+                                                4D di chuyển Đa Năng Cao Cấp Toshiko T8, đạt chuẩn ISO massage sâu tại các
+                                                vùng chuyên biệt, Máy Massage Toàn Thân Đa Năng chức năng dò tìm huyệt đạo
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">16.990.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-47%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Quà tặng</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 3, ngày 18/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-6.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Đánh Thức Năng Lượng Tích Cực
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">5</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">96.500 ₫</div>
+                                                <div class="giam-gia-san-pham">-35%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 2, ngày 17/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-7.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Samsung Galaxy S23 Plus 5G (8GB/256GB) - Hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-8.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Gaming Tecno POVA 3 (6+5GB)/128GB-Helio
+                                                G88|7000 mAh|Sạc nhanh 33W-Hàng Chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 5, ngày 20/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-9.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Máy Massage Cầm Tay KINGTECH KH-320 - 6 Cấp Độ, Hỗ Trợ Mát Xa Chuyên Sâu,
+                                                Giảm Đau Cơ, Cứng Khớp - Quà Tặng Cho Sức Khỏe
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-10.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Samsung Galaxy A13 (4GB/128GB) - Hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-11.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/uy-tin.png" alt="" class="anh-uy-tin-san-pham">
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Catsrang 5Kg Thức Ăn Hạt Cho Mèo Mọi Lứa Tuổi
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">16.990.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-47%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Quà tặng</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 3, ngày 18/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-12.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                1kg Khô gà lá chanh thượng hạng hiệu TETE
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">5</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">96.500 ₫</div>
+                                                <div class="giam-gia-san-pham">-35%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 2, ngày 17/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-13.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Bộ Thu Phát Bluetooth TP-Link UB500 USB Nano Bluetooth 5.0 - Hàng Chính Hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-14.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Gạo lứt đen hữu cơ cao cấp/ECOBA Huyền Mễ 1kg -
+                                                Thơm ngon dẻo ngọt - Thanh lọc cơ thể
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 5, ngày 20/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-15.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Dây Cáp Âm Thanh AUX 3.5mm Zealot dành cho loa bluetooth hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham gia-goc-san-pham">76.500 ₫</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-16.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Bánh gạo lứt mầm GUfoods (bánh mầm) - Giàu GABA tự nhiên,
+                                                Hỗ trợ ăn kiêng, Thực dưỡng, Thuần chay
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-17.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Bánh gạo lứt mầm GUfoods (bánh mầm) - Giàu GABA tự nhiên, Hỗ trợ ăn kiêng,
+                                                Thực dưỡng, Thuần chay
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham gia-goc-san-pham">58.800 ₫</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Quà tặng</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 3, ngày 18/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-18.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Đánh Thức Năng Lượng Tích Cực
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">5</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">96.500 ₫</div>
+                                                <div class="giam-gia-san-pham">-35%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 2, ngày 17/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-19.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Samsung Galaxy S23 Plus 5G (8GB/256GB) - Hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-20.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Gaming Tecno POVA 3 (6+5GB)/128GB-Helio
+                                                G88|7000 mAh|Sạc nhanh 33W-Hàng Chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 5, ngày 20/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-21.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Máy Massage Cầm Tay KINGTECH KH-320 - 6 Cấp Độ, Hỗ Trợ Mát Xa Chuyên Sâu,
+                                                Giảm Đau Cơ, Cứng Khớp - Quà Tặng Cho Sức Khỏe
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-22.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Samsung Galaxy A13 (4GB/128GB) - Hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-23.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/uy-tin.png" alt="" class="anh-uy-tin-san-pham">
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Catsrang 5Kg Thức Ăn Hạt Cho Mèo Mọi Lứa Tuổi
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">16.990.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-47%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Quà tặng</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 3, ngày 18/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-24.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                1kg Khô gà lá chanh thượng hạng hiệu TETE
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">5</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">96.500 ₫</div>
+                                                <div class="giam-gia-san-pham">-35%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 2, ngày 17/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-25.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Bộ Thu Phát Bluetooth TP-Link UB500 USB Nano Bluetooth 5.0 - Hàng Chính Hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-26.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Gạo lứt đen hữu cơ cao cấp/ECOBA Huyền Mễ 1kg -
+                                                Thơm ngon dẻo ngọt - Thanh lọc cơ thể
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 5, ngày 20/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-27.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Dây Cáp Âm Thanh AUX 3.5mm Zealot dành cho loa bluetooth hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham gia-goc-san-pham">76.500 ₫</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-28.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Bánh gạo lứt mầm GUfoods (bánh mầm) - Giàu GABA tự nhiên,
+                                                Hỗ trợ ăn kiêng, Thực dưỡng, Thuần chay
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-29.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Máy Massage Cầm Tay KINGTECH KH-320 - 6 Cấp Độ, Hỗ Trợ Mát Xa Chuyên Sâu,
+                                                Giảm Đau Cơ, Cứng Khớp - Quà Tặng Cho Sức Khỏe
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-30.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Điện thoại Samsung Galaxy A13 (4GB/128GB) - Hàng chính hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-31.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/uy-tin.png" alt="" class="anh-uy-tin-san-pham">
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Catsrang 5Kg Thức Ăn Hạt Cho Mèo Mọi Lứa Tuổi
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">16.990.000 ₫</div>
+                                                <div class="giam-gia-san-pham">-47%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Quà tặng</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 3, ngày 18/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-32.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                1kg Khô gà lá chanh thượng hạng hiệu TETE
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">5</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">96.500 ₫</div>
+                                                <div class="giam-gia-san-pham">-35%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 2, ngày 17/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-33.jpg.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Bộ Thu Phát Bluetooth TP-Link UB500 USB Nano Bluetooth 5.0 - Hàng Chính Hãng
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <img src="asset/img/now.png" alt="" class="anh-giao-hang">
+                                            <div class="chu-giao-hang">Giao sáng mai</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-2-6 ds-san-pham">
+                                    <a href="">
+                                        <img src="asset/img/san-pham-34.png.webp" alt="" class="anh-san-pham">
+                                        <img src="asset/img/official-san-pham.png" alt="" class="anh-official-san-pham">
+                                        <img src="asset/img/astra.png" alt="" class="anh-astra">
+                                        <div class="tai-tro">Tài trợ</div>
+                                        <div class="thong-tin-san-pham">
+                                            <div class="tieu-de-san-pham">
+                                                Gạo lứt đen hữu cơ cao cấp/ECOBA Huyền Mễ 1kg -
+                                                Thơm ngon dẻo ngọt - Thanh lọc cơ thể
+                                            </div>
+                                            <div class="danh-gia-san-pham">
+                                                <div class="sao-san-pham">4.95</div>
+                                                <i class="fa-solid fa-star star-icon"></i>
+                                                <div class="dau-gach-doc"></div>
+                                                <div class="san-pham-da-ban">Đã bán 1000+</div>
+                                            </div>
+                                            <div class="gia-san-pham">
+                                                <div class="gia-giam-san-pham">76.500 ₫</div>
+                                                <div class="giam-gia-san-pham">- 30%</div>
+                                            </div>
+                                            <div class="thong-tin-hoan-tien">
+                                                Tặng tới 2 ASA (277 ₫)
+                                                <br>
+                                                ≈ 0.4% hoàn tiền
+                                            </div>
+                                            <div class="thong-tin-them">
+                                                <div class="tra-gop">Trả góp</div>
+                                                <div class="mau-san-pham">Nhiều màu</div>
+                                            </div>
+                                        </div>
+                                        <div class="giao-hang">
+                                            <div class="chu-giao-hang">Giao thứ 5, ngày 20/04</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="xem-them-san-pham">
+                                    <div class="xem-them">
+                                        <a href="" class="chu-xem-them">Xem Thêm</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <footer class="chan-trang">
+                            <div class="row thong-tin-chan-trang">
+                                <div class="col-2 ho-tro-khach-hang">
+                                    <h4 class="chu-ho-tro-khach-hang">Hỗ trợ khách hàng</h4>
+                                    <ul class="ds-ho-tro-khach-hang">
+                                        <li class="ho-tro-khach-hang-list">Hotline: <a href=""
+                                                class="ho-tro-khach-hang-link tel">1900-6035</a>
+                                            <br>
+                                            (1000 đ/phút, 8-21h kể cả T7, CN)
+                                        </li>
+                                        <li class="ho-tro-khach-hang-list"><a href="" class="ho-tro-khach-hang-link">Các
+                                                câu hỏi thường gặp</a></li>
+                                        <li class="ho-tro-khach-hang-list"><a href="" class="ho-tro-khach-hang-link">Gửi
+                                                yêu cầu hỗ trợ</a></li>
+                                        <li class="ho-tro-khach-hang-list"><a href=""
+                                                class="ho-tro-khach-hang-link">Hướng dẫn đặt hàng</a></li>
+                                        <li class="ho-tro-khach-hang-list"><a href=""
+                                                class="ho-tro-khach-hang-link">Phương thức vận chuyển</a></li>
+                                        <li class="ho-tro-khach-hang-list"><a href=""
+                                                class="ho-tro-khach-hang-link">Chính sách đổi trả</a></li>
+                                        <li class="ho-tro-khach-hang-list"><a href=""
+                                                class="ho-tro-khach-hang-link">Hướng dẫn trả góp</a></li>
+                                        <li class="ho-tro-khach-hang-list"><a href=""
+                                                class="ho-tro-khach-hang-link">Chính sách hàng nhập khẩu</a></li>
+                                        <li class="ho-tro-khach-hang-list">Hỗ trợ khách hàng: <a href=""
+                                                class="ho-tro-khach-hang-link">hotro@tiki.vn</a></li>
+                                        <li class="ho-tro-khach-hang-list">Báo lỗi bảo mật: <a href=""
+                                                class="ho-tro-khach-hang-link">security@tiki.vn</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 ve-tiki">
+                                    <h4 class="chu-ve-tiki">Về Tiki</h4>
+                                    <ul class="ds-ve-tiki">
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Giới thiệu Tiki</a>
+                                        </li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Tiki Blog</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Tuyển dụng</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Chính sách bảo mật
+                                                thanh toán</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Chính sách bảo mật
+                                                thông tin cá nhân</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Chính sách giải quyết
+                                                khiếu nại</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Điều khoản sử dụng</a>
+                                        </li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Giới thiệu Tiki Xu</a>
+                                        </li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Gửi Astra nhận Xu mua
+                                                sắm thả ga</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Tiếp thị liên kết cùng
+                                                Tiki</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Bán hàng doanh
+                                                nghiệp</a></li>
+                                        <li class="ve-tiki-list"><a href="" class="ve-tiki-link">Điều kiện vận
+                                                chuyển</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-2 hop-tac-va-chung-nhan">
+                                    <div class="hop-tac-va-lien-ket">
+                                        <h4 class="chu-hop-tac-va-lien-ket">Hợp tác và liên kết</h4>
+                                        <ul class="ds-hop-tac-va-lien-ket">
+                                            <li class="hop-tac-va-lien-ket-list"><a href="" class="hop-tac-va-lien-ket-link">Quy chế hoạt động Sàn GDTMĐT</a>
+                                            </li>
+                                            <li class="hop-tac-va-lien-ket-list"><a href="" class="hop-tac-va-lien-ket-link">Bán hàng cùng Tiki</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="chung-nhan-boi">
+                                        <h4 class="chu-chung-nhan-boi">Chứng nhận bởi</h4>
+                                        <a href="">
+                                            <img src="asset/img/bo-cong-thuong-2.png" alt="" class="anh-bo-cong-thuong-1">
+                                        </a>
+                                        <a href="">
+                                            <img src="asset/img/bo-cong-thuong.svg" alt="" class="anh-bo-cong-thuong-2">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-2 phuong-thuc-va-dich-vu">
+                                    <div class="phuong-thuc-thanh-toan">
+                                        <h4 class="chu-phuong-thuc-thanh-toan">Phương thức thanh toán</h4>
+                                        <div class="anh-phuong-thuc-thanh-toan">
+                                            <img src="asset/img/phuong-thuc-thanh-toan.png" alt="" class="anh-phuong-thuc-thanh-toan">
+                                        </div>
+                                    </div>
+                                    <div class="dich-vu-giao-hang">
+                                        <h4 class="chu-dich-vu-giao-hang">Dịch vụ giao hàng</h4>
+                                        <a href=""><img src="asset/img/tikinow.webp" alt="" class="anh-tiki-now"></a>
+                                    </div>
+                                </div>
+
+                                <div class="col-2 lien-ke-va-tai">
+                                    <div class="lien-ket">
+                                        <h4 class="chu-lien-ket">Kết nối với chúng tôi</h4>
+                                        <div class="anh-lien-ket">
+                                            <a href="">
+                                                <img src="asset/img/facebook.jpg" alt="" class="anh-facebook">
+                                            </a>
+                                            <a href="">
+                                                <img src="asset/img/youtube.png" alt="" class="anh-youtube">
+                                            </a>
+                                            <a href="">
+                                                <img src="asset/img/zalo.jpg" alt="" class="anh-zalo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tai-ung-dung">
+                                        <h4 class="chu-tai-ung-dung">Tải ứng dụng trên điện thoại</h4>
+                                        <div class="anh-tai-ung-dung">
+                                            <img src="asset/img/qrcode.png" alt="" class="anh-qrcode">
+                                            <a href="">
+                                                <img src="asset/img/appstore.png" alt="" class="anh-appstore">
+                                            </a>
+                                            <a href="">
+                                                <img src="asset/img/playstore.png" alt="" class="anh-playstore">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row thong-tin-dia-chi">
+                                <p class="chu-thong-tin-dia-chi">Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường 12, quận 10, Thành phố Hồ Chí Minh</p>
+                                <p class="chu-thong-tin-dia-chi">Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
+                                <p class="chu-thong-tin-dia-chi">Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và sửa đổi lần thứ 23 ngày 14/02/2022</p>
+                                <p class="chu-thong-tin-dia-chi">© 2022 - Bản quyền của Công ty TNHH Ti Ki</p>
+                            </div>
+
+                            <div class="row thong-tin-quang-cao">
+                                <div class="chu-thong-tin-quang-cao">
+                                    Tiki - Thật nhanh, thật chất lượng, thật rẻ
+                                </div>
+                                <div class="tiki-co-tat-ca">
+                                    <div class="chu-tiki-co-tat-ca">
+                                        Tiki có tất cả
+                                    </div>
+                                    <div class="thong-tin-tiki-co-tat-ca">
+                                        Với hàng triệu sản phẩm từ các thương hiệu, cửa hàng uy tín, hàng nghìn loại mặt hàng từ
+                                        <a href="">Điện thoại smartphone</a> tới <a href=""> Rau củ quả tươi,</a>
+                                        kèm theo dịch vụ giao hàng siêu tốc TikiNOW, Tiki mang đến cho bạn một trải nghiệm mua sắm online 
+                                        bắt đầu bằng chữ tín. Thêm vào đó, ở Tiki bạn có thể dễ dàng sử dụng vô vàn các tiện ích khác như 
+                                        <a href="">mua thẻ cào, thanh toán hoá đơn điện nước, các dịch vụ bảo hiểm.</a>
+                                    </div>
+                                    <div class="chu-tiki-khuyen-mai">
+                                        Khuyến mãi, ưu đãi tràn ngập
+                                    </div>
+                                    <div class="thong-tin-tiki-khuyen-mai">
+                                        Bạn muốn săn giá sốc, Tiki có<a href=""> giá sốc mỗi ngày </a>cho bạn! Bạn là tín đồ của các thương hiệu, các
+                                        <a href=""> cửa hàng Official chính hãng</a> đang chờ đón bạn. Không cần săn mã freeship, vì Tiki đã có hàng triệu sản phẩm trong
+                                        <a href=""> chương trình Freeship+, </a>không giới hạn lượt đặt, tiết kiệm thời gian vàng bạc của bạn. Mua thêm gói
+                                        <a href=""> TikiNOW tiết kiệm </a>để nhận 100% free ship 2h & trong ngày, hoặc mua gói TikiNOW cao cấp để nhận được 100% freeship, 
+                                        áp dụng cho 100% sản phẩm, 100% tỉnh thành Việt Nam. Bạn muốn tiết kiệm hơn nữa? Đã có TikiCARD,<a href=""> thẻ tín dụng Tiki hoàn tiền 15% </a>
+                                        trên mọi giao dịch (tối đa hoàn 600k/tháng)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row thong-tin-danh-muc">
+                                <div class="chu-danh-muc-san-pham">
+                                    Danh Mục Sản Phẩm
+                                </div>
+                                <div class="col-2 danh-muc-do-choi">
+                                    <div class="tieu-de-danh-muc">
+                                        Đồ Chơi - Mẹ & Bé
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Thực Phẩm Tươi Sống
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Điện Thoại - Máy Tính Bảng
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Làm Đẹp - Sức Khỏe
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                </div>
+                                <div class="col-2 danh-muc-do-choi">
+                                    <div class="tieu-de-danh-muc">
+                                        Thời trang nữ
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Thời trang nam
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Giày - Dép nữ
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Giày - Dép nam
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                </div>
+                                <div class="col-2 danh-muc-do-choi">
+                                    <div class="tieu-de-danh-muc">
+                                        Balo và Vali
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Phụ kiện thời trang
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Đồng hồ và Trang sức
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Laptop - Máy Vi Tính - Linh kiện
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                </div>
+                                <div class="col-2 danh-muc-do-choi">
+                                    <div class="tieu-de-danh-muc">
+                                        Hàng Quốc Tế
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Thiết Bị Số - Phụ Kiện Số
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Voucher - Dịch vụ
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Ô Tô - Xe Máy - Xe Đạp
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                </div>
+                                <div class="col-2 danh-muc-do-choi">
+                                    <div class="tieu-de-danh-muc">
+                                        Điện Tử - Điện Lạnh
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Thể Thao - Dã Ngoại
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Máy Ảnh - Máy Quay Phim
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                    <div class="tieu-de-danh-muc">
+                                        Từ Khóa Được Quan Tâm
+                                    </div>
+                                    <div class="danh-sach-danh-muc">
+                                        <a href=""> Trang Cho Mẹ Và Bé </a> /
+                                        <a href=""> Đồ chơi </a> /
+                                        <a href=""> Đồ dùng cho bé </a> /
+                                        <a href=""> Chăm sóc nhà cửa </a> /
+                                        <a href=""> Chăm sóc mẹ mang thai, sau sinh </a> /
+                                        <a href=""> Dinh dưỡng cho bé </a> /
+                                        <a href=""> Tã, Bỉm </a> /
+                                        <a href=""> Dinh dưỡng cho người lớn </a> /
+                                        <a href=""> Dinh dưỡng cho mẹ </a> /
+                                        <a href=""> Thực phẩm ăn dặm </a> /
+                                        <a href=""> Chuẩn bị mang thai </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
+<!-- <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("fade");
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].classList.add("active");
+        slides[slideIndex-1].classList.add("fade");
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        setTimeout(showSlides, 6000);
+    }
+</script> -->
+
 </html>
